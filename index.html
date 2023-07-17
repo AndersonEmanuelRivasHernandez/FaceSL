@@ -1,0 +1,197 @@
+ 
+ <p> Explico brevemente, ésta página es anomina, Los likes son contables esto quiere decir que se guardan</p>
+ <p1> Diviertete, si tienes imagenes de otr@s alumn@s pasarlas al instagram @</p1>
+ 
+ <title>FaceSL</title>
+ <!DOCTYPE html>
+ <html>
+ <head>
+
+  <script>
+    var perfiles = [
+      { imagen: "ruta-imagen1.jpg", nombre: "Usuario 1", likes: 0 },
+      { imagen: "ruta-imagen2.jpg", nombre: "Usuario 2", likes: 0 },
+      { imagen: "ruta-imagen3.jpg", nombre: "Usuario 3", likes: 0 },
+      { imagen: "ruta-imagen4.jpg", nombre: "Usuario 4", likes: 0 },
+      { imagen: "ruta-imagen5.jpg", nombre: "Usuario 5", likes: 0 },
+      { imagen: "ruta-imagen6.jpg", nombre: "Usuario 6", likes: 0 },
+      { imagen: "ruta-imagen7.jpg", nombre: "Usuario 7", likes: 0 },
+      { imagen: "ruta-imagen8.jpg", nombre: "Usuario 8", likes: 0 },
+    ];
+    
+    function contarLikes(index) {
+      perfiles[index].likes++;
+      document.getElementById("contador-likes-" + index).textContent = perfiles[index].likes;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img1.png" alt="Foto de perfil">
+      <h2>Usuario 1</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(0)">Like</button>
+      
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-0">0</span>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img2.png" alt="Foto de perfil">
+      <h2>Usuario 2</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(1)">Like</button>
+      
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-1">0</span>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img3.png" alt="Foto de perfil">
+      <h2>Usuario 3</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(2)">Like</button>
+      
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-2">0</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img4.png" alt="Foto de perfil">
+      <h2>Usuario 4</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(3)">Like</button>
+      
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-3">0</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img5.png" alt="Foto de perfil">
+      <h2>Usuario 5</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(4)">Like</button>
+      
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-4">0</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img6.png" alt="Foto de perfil">
+      <h2>Usuario 6</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(5)">Like</button>
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-5">0</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img7.png" alt="Foto de perfil">
+      <h2>Usuario 7</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(6)">Like</button>
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-6">0</span>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="profile">
+      <img src="photos/img8.png" alt="Foto de perfil">
+      <h2>Usuario 8</h2>
+    </div>
+    <div class="buttons">
+      <button class="like" onclick="contarLikes(7)">Like</button>
+    </div>
+    <div class="likes-count">
+      Likes: <span id="contador-likes-7">0</span>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos CSS para el contenedor */
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    
+    /* Estilos CSS para el perfil */
+    .profile {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .profile h2 {
+      margin-top: 10px;
+    }
+    
+    .buttons {
+      text-align: center;
+    }
+    
+    .buttons button {
+      display: inline-block;
+      width: 100px;
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .buttons button.like {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+
